@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .ChooseOption h1{
+            font-size: 100px;
+            color: #3D3738;
+            text-align: center;
+            margin-top: 60px;
+        }
+        .Inward:hover {
+            transform: perspective(1000px) translate3d(20px, 20px,20px);
+            transition-duration: 1500ms;
+            transition-property: all;
+        }
+        .Inward{ 
+            border-radius: 23px;
+            padding: 20px;
+            background-color: #71A4F2;
+            width: 35%;
+            display: flex;
+            color: white;
+        }
+        .Inwardtitle{
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        .InwardDesc{
+            margin-top: 25px;
+            font-size: 32px;
+        }
+
+        .Inward img{
+            width: 250px;
+            margin-top: 30px;
+        }
+
+        .Outward{
+            border-radius: 23px;
+            margin-left: 150px ;
+            padding: 20px;
+            background-color: #0E7C7B;
+            width: 35%;
+            display: flex;
+            color: white;
+        }
+        .Outward:hover {
+            transform: perspective(1000px) translate3d(20px, 20px,20px);
+            transition-duration: 1500ms;
+            transition-property: all;
+        }
+        .Outwardtitle{
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        .OutwardDesc{
+            margin-top: 25px;
+            font-size: 32px;
+        }
+
+        .Outward img{
+            margin-right: 20px;
+            width: 250px;
+            margin-top: 30px;
+
+        }
+
+        .Choice{
+            margin-top: 60px;
+            display: flex;
+            justify-content: center;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .SubmitButton{
+            width: 30%;
+            background-color: #07004D;
+            border-radius: 9px;
+            padding: 7px;
+            text-align: center;
+            margin-top: 0px;
+            
+        }
+
+        .SubmitButton a{
+            color: white;
+            font-size: 28px;
+            text-decoration: none;
+        }
+
+        .SubmitContainer{
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class = "ChooseOption">
+        <h1>I want to....</h1>
+    </div>
+    <div class = "Choice">
+        <div class = "Inward">
+            <div><a href = "InwardForm1.html"> <img src="LogMaterialLogo.png"></a></div>
+            <div class = "Vertical">
+                <a href ="InwardForm1.html"><div class = "Inwardtitle">Log Material</div></a>
+                <a href = "InwardForm1.html"> <div class = "InwardDesc"><p>Log the details of existing inward material that is to be recycled</p></div></a> 
+            </div>
+            
+        </div>
+        <div class = "Outward">
+            <div><a href= "RegistorVendorForm1.html"><img src="RegisterVendorLogo.png"></a></div>
+            <div class = "Vertical">
+                <a href= "RegistorVendorForm1.html"><div class = "Outwardtitle">Register Vendor</div></a>
+                <a href= "RegistorVendorForm1.html"><div class = "OutwardDesc"><p>Log the details of existing inward material that is to be recycled</p></div></a>
+            </div>
+        </div>
+    </div>
+    <div class = "SubmitContainer">
+        <div class = "SubmitButton">
+            <a href = "HomePage.html">Back</a>
+        </div>
+    </div>
+</body>
+</html>

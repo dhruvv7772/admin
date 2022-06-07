@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+
+}
+
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: white;
+}
+
+nav p{
+ font-family: arial;
+ color: #222;  
+ background-color: red;
+ font-size: 24px;
+ line-height: 55px; 
+ float: left;
+ padding: 0px 20px;
+}
+
+nav ul{
+    background-color: pink;
+    float: left;
+}
+
+nav ul li{
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li a{
+    display: block;
+    font-family: arial;
+    color: #222;  
+    font-size: 14px;
+    padding: 21px 14px;
+    text-decoration: none;
+}
+
+nav ul li ul{
+    display: none;
+    position: absolute;
+    background-color: white;   
+    padding: 10px;
+    border-radius: 0px 0px 4px 4px;
+}
+
+nav ul li:hover ul{
+    display: block;
+}
+
+nav ul li ul li{
+    width: 180px;
+    border-radius: 4px;
+
+}
+
+nav ul li ul li a{
+   padding: 8px 14px;
+
+}
+
+nav ul li ul li a:hover{
+    background-color: #f3f3f3;    
+ }
+    </style>
+
+</head>
+<body>
+    <nav>
+        <p>Hello</p>
+        <ul>
+            <li><a href = "Sampledrop.html">Mumbai</a></li>
+            <li><a href = "#">Delhi</a>
+                <ul>
+                    <li><a href = "#">Location1</a></li>
+                    <li><a href = "#">Location2</a></li>
+                    <li><a href = "#">Location3</a></li>                  
+                </ul>
+            </li>
+            <li><a href = "#"">Chennai </a></li>
+            <li><a href = "#"">Kolkata</a></li>
+
+        </ul>
+    </nav>
+</body>
+</html>

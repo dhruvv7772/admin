@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dispatch Form1</title>
+
+    <style>
+        *{
+            padding: 0%;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        .RecircleLogo{
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+            margin-right: 20px;
+        }
+
+        .RecircleLogo img{
+            width: 250px;
+        }
+
+        .RegisterVendorForm1{
+            text-align: center;
+            font-size: 35px;
+            color: #3D3738;
+            margin-top: -10px;    
+        }
+
+        .Email{
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+
+        }
+        #EmailField{
+           background-color: rgba(113, 164, 242, 0.21);
+           padding: 20px;
+           border: none;
+           border-radius: 9px;
+        }
+
+        .Email p{
+            color: #FF331F;
+        }
+
+        .Email label{
+            display: flex;
+        }
+
+        .Horizontal{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .LeftColumn{
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            margin-right: 200px;
+            
+        }
+
+        .RightColumn{
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+        }
+
+        .Horizontal label{
+            margin-top: 30px ;
+            font-size: 28px;
+        }
+
+        .SubmitButton{
+            width: 30%;
+            background-color: #07004D;
+            border-radius: 9px;
+            padding: 7px;
+            text-align: center;
+            margin-top: 30px;
+            
+        }
+
+        .SubmitButton a{
+            color: white;
+            font-size: 28px;
+            text-decoration: none;
+        }
+
+        .SubmitContainer{
+            display: flex;
+            justify-content: center;
+            margin-top: -35px;
+        }
+
+        .MaterialContainer{
+            color: #3D3738;
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .MaterialContainer img{
+            width: 100px;
+        }
+        .EmptyBox{
+            height: 116px;
+        }
+        .Uploaded{
+            color: #56946C;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .MaterialPictures{
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .MinPictures{
+            font-size: 16px;
+            font-weight: 100;
+        }
+
+        .Buttons{
+    display: flex;
+    justify-content: center;
+
+}
+.Empty1{
+    width: 150px;
+}
+.SubmitButton{
+width: 300px
+}
+
+
+    </style>
+
+    
+
+
+</head>
+<body>
+    <div class =  "RecircleLogo">
+        <img src = "RecircleLogo.png">
+    </div>
+    <div class = "RegisterVendorForm1">
+        <h1>Dispatch Form</h1>
+    </div>
+    <div class = "Horizontal">
+        <div class = "LeftColumn">
+            <div class = "Email">
+                <label for = "Date"> Date<p>*</p> </label>
+                <input id = "EmailField" type = "text" name = " Date">
+            </div>
+            <div class = "Email">
+                <label for = "City"> City<p>*</p> </label>
+                <input id = "EmailField" type = "text" name = " City">
+            </div>
+            <div class = "Email">
+                <label for = "Vehicle_Number"> Vehicle Number<p>*</p> </label>
+                <input id = "EmailField" type = "text" name = " Vehicle_Number">
+            </div>
+            <div class = "MaterialContainer">
+                <div class = "ImageContainer">
+                    <img src = "Camera.png">
+                </div>
+                <div>
+                    <div class = "MaterialPictures">
+                        <p>Material Pictures </p>            
+                    </div>
+                    <div class = "MinPictures">
+                        <p>Minimum of 2 </p>            
+                    </div>
+                </div>
+                <div class = "Uploaded">
+                    <p>Uploaded 2 of 2 </p>            
+                </div>
+        
+            </div>      
+        </div>
+        <div class = "RightColumn">          
+            <div class = "Email">
+                <label for = "License"> Driver's License Number<p>*</p> </label>
+                <input id = "EmailField" type = "text" name = "License">
+            </div>
+            <div class = "Email">
+                <label for = "Driver_Name"> Driver Name<p>*</p></label>
+                <input id = "EmailField" type = "text" name = "Driver_Name">
+            </div>
+            <div class = "Email">
+                <label for = "Phone"> Driver's Phone Number<p>*</p> </label>
+                <input id = "EmailField" type = "text" name = "Phone">
+            </div>
+            <div class = "EmptyBox">
+        
+            </div>
+        </div>
+    </div>
+     
+    <div class = "Buttons">
+        <div class = "SubmitContainer">
+            <div class = "SubmitButton">
+                <a href = "Outwardchoices.html">Back</a>
+            </div>
+        </div>
+        <div class = "Empty1"></div>
+        <div class = "SubmitContainer">
+            <div class = "SubmitButton">
+                <a href = "DispatchForm2.html">Next</a>
+            </div>
+        </div>
+        </div>
+</div>
+</body>
+</html>

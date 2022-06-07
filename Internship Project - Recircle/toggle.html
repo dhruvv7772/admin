@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle{
+            display: block;
+            height: 40px;
+            width: 40px;
+            border: none;
+            border-radius: 50px;
+            outline: none;
+            background-color: #07004D;
+            padding: 12px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+            margin-right: 17px;
+            margin-top: 5px;
+        }
+
+        .circle:hover{
+            cursor: pointer;
+        }
+
+        .linewrapper{
+            transition: 0.3s ease;
+
+        }
+
+        .horizontal, .vertical{
+            width: 100%;
+            height: 2px;
+            background-color: white;
+            pointer-events: none;
+        }
+
+        .vertical{
+            position: relative;
+            bottom: 2px;
+            transform: rotate(90deg);
+            transition: 0.3s ease;
+        }
+
+        .vertical.open{
+            transform: rotate(180deg);
+        }
+
+        .linewrapper.open{
+            transform: rotate(180deg);
+        }
+
+        .content{
+            margin-top: 8px;
+            height: 0px;
+            background-color:  rgba(113, 164, 242, 0.21);
+            padding: 10px;
+            overflow: hidden;
+            transition: 0.3s ease;
+            width: 50%;
+            border-radius: 9px;
+        }
+
+        .contentwrapper{
+            padding: 10px;
+        }
+
+        .contentwrapper p:hover {
+            background-color:  rgba(113, 164, 242, 0.16);
+            cursor: pointer;
+
+        }
+
+        .contentwrapper p{
+            padding: 20px;
+            border-radius: 9px;
+        }
+
+        .content.open{
+            height: min-content;
+            border-radius: 9px;
+
+        }
+
+        .DropdownField{
+            display: flex;
+            justify-content: space-between;
+            background-color: rgba(113, 164, 242, 0.21);
+            border-radius: 9px;
+            padding: 20px;
+            width: 50%;
+            padding-right: 0px;
+
+        }
+
+        .DropdownField p{
+            color: grey;
+
+        }
+
+    </style>
+           
+</head>
+<body>
+    <div class="DropdownField">
+        <p>Select Option</p>
+    <button class = "circle">
+        <div class="linewrapper">
+            <div class="horizontal"></div>
+            <div class="vertical"></div>
+        </div>
+    </button>
+</div>
+    <div class="content">
+        <div class="contentwrapper">
+        <p>Individual Customer</p>    
+        <p>Institutional Customer</p>      
+        <p>Small Aggregator</p>     
+
+        </div>
+    </div>
+    <script>
+
+        document.querySelector('.circle').addEventListener('click', () => {
+            document.querySelector('.vertical').classList.toggle('open');
+            document.querySelector('.linewrapper').classList.toggle('open');
+            document.querySelector('.content').classList.toggle('open');
+        });
+    </script>
+
+</body>
+</html>

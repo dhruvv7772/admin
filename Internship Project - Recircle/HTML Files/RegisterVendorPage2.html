@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Vendor</title>
+
+    <style>
+        *{
+            padding: 0%;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        .RecircleLogo{
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+            margin-right: 20px;
+        }
+
+        .RecircleLogo img{
+            width: 250px;
+        }
+
+        .RegisterVendorForm1{
+            text-align: center;
+            font-size: 35px;
+            color: #3D3738;
+        }
+
+        .Email{
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+
+        }
+        #EmailField{
+           background-color: rgba(113, 164, 242, 0.21);
+           padding: 20px;
+           border: none;
+           border-radius: 9px;
+        }
+
+        .Horizontal{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .LeftColumn{
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            margin-right: 200px;
+            
+        }
+
+        .RightColumn{
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+        }
+
+        .Horizontal label{
+            margin-top: 30px ;
+            font-size: 28px;
+        }
+
+        .SubmitButton{
+            width: 30%;
+            background-color: #07004D;
+            border-radius: 9px;
+            padding: 7px;
+            text-align: center;
+            margin-top: 30px;
+            
+        }
+
+        .SubmitButton a{
+            color: white;
+            font-size: 28px;
+            text-decoration: none;
+        }
+
+        .SubmitContainer{
+            display: flex;
+            justify-content: center;
+            margin-top: 35px;
+        }
+
+        .Buttons{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.Empty1{
+    width: 150px;
+}
+
+.SubmitButton{
+width: 300px
+}
+
+        
+    </style>
+
+</head>
+<body>
+    <div class =  "RecircleLogo">
+        <img src = "RecircleLogo.png">
+    </div>
+    <div class = "RegisterVendorForm1">
+        <h1>Register Vendor Form</h1>
+    </div>
+    <div class = "Horizontal">
+        <div class = "LeftColumn">
+            <div class = "Email">
+                <label for = "Vendor_Email"> Vendor Email* </label>
+                <input id = "EmailField" type = "text" name = " Vendor_Email">
+            </div>
+                        <div class = "Email">
+                <label for = "Company_Name"> Company Name* </label>
+                <input id = "EmailField" type = "text" name = " Company_Name">
+            </div>
+        </div>
+        <div class = "RightColumn">          
+            <div class = "Email">
+                <label for = "Location"> Location* </label>
+                <input id = "EmailField" type = "text" name = " Location">
+            </div>
+            <div class = "Email">
+                <label for = "GST"> GST Number* </label>
+                <input id = "EmailField" type = "text" name = " GST">
+            </div>
+        </div>
+    </div>
+    <div class = "Buttons">
+        <div class = "SubmitContainer">
+            <div class = "SubmitButton">
+                <a href = "RegistorVendorForm1.html">Back</a>
+            </div>
+        </div>
+        <div class = "Empty1"></div>
+        <div class = "SubmitContainer">
+            <div class = "SubmitButton">
+                <a href = "RegisterVendorSuccess.html">Submit</a>
+            </div>
+        </div>
+        </div>
+</body>
+</html>

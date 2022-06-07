@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .ChooseOption h1{
+            font-size: 100px;
+            color: #3D3738;
+            text-align: center;
+            margin-top: 60px;
+        }
+        .Inward:hover {
+            transform: perspective(1000px) translate3d(20px, 20px,20px);
+            transition-duration: 1500ms;
+            transition-property: all;
+        }
+        .Inward{ 
+            border-radius: 23px;
+            padding: 20px;
+            background-color: #71A4F2;
+            width: 35%;
+            display: flex;
+            color: white;
+        }
+
+        .Inward a{
+            text-decoration: none;
+            color: white;
+        }
+
+
+        .Inwardtitle{
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        .InwardDesc{
+            margin-top: 50px;
+            font-size: 32px;
+        }
+
+        .Inward img{
+            width: 250px;
+        }
+
+        .Outward{
+            border-radius: 23px;
+            margin-left: 150px ;
+            padding: 20px;
+            background-color: #0E7C7B;
+            width: 35%;
+            display: flex;
+            color: white;
+        }
+        .Outward a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .Outward:hover {
+            transform: perspective(1000px) translate3d(20px, 20px,20px);
+            transition-duration: 1500ms;
+            transition-property: all;
+        }
+        .Outwardtitle{
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        .OutwardDesc{
+            margin-top: 50px;
+            font-size: 32px;
+        }
+
+        .Outward img{
+            margin-right: 20px;
+            width: 250px;
+        }
+
+        .Choice{
+            margin-top: 60px;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class = "ChooseOption">
+        <h1>I want to....</h1>
+    </div>
+    <div class = "Choice">
+        <div class = "Inward"> 
+            <div><a href = "InwardChoices.html"><img src="InwardLogo.png"></a></div>
+            <div class = "Vertical">
+                <div class = "Inwardtitle"> <a href = "InwardChoices.html">Inward</a></div>
+                <div class = "InwardDesc"><p><a href = "InwardChoices.html">Register plastic waste that is to be recycled</a></p></div>
+            </div>
+           </div>
+        <div class = "Outward">
+            <div><a href = "CollectionDash.html"><img src="OutwardLogo.png"></a></div>
+            <div class = "Vertical">
+                <div class = "Outwardtitle"><a href = "CollectionDash.html">Outward</a></div>
+                <div class = "OutwardDesc"><p><a href = "CollectionDash.html">Sort plastic waste and sell it to a manufacturer or recycler</p></a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
